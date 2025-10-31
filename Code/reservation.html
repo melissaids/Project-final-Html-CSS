@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation Street Gourmand</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+
+<div class="container">
+    <nav class="header-nav">
+        <a href="#">Accueil</a>
+        <a href="#">À propos de nous</a>
+        <a href="#">Nos services</a>
+        <img src="./logo sans texte.png" alt="Logo Street Gourmand" id="SGlogo">
+        <a href="./reservation.html">Réservation</a>
+        <a href="./contact.html">Nous contacter</a>
+        <a href="#">Blog</a>
+    </nav>
+
+    <div class="reservation-form">
+        <h1 class="reservation-title">RÉSERVATION</h1>
+        <p class="reservation-subtitle">Merci de remplir ce formulaire pour toute réservation (de 1 personne ou plus).</p>
+
+        <form class="reservation-main-form">
+
+            <div class="colonne-gauche">
+                
+                <div class="form-section">
+                    <p class="form-title">Détails de votre réservation :</p>
+
+                    <div class="grid-3-col">
+                        <div class="form-group">
+                            <label for="date-souhaitee">Date souhaitée :</label>
+                            <input type="date" id="date-souhaitee" name="date-souhaitee" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="heure">Heure (ex:19h) :</label>
+                            <input type="time" id="heure" name="heure" required value="19:00">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nombre-personne">Nombre de personne :</label>
+                            <select id="nombre-personne" name="nombre-personne" required>
+                                <option value="">Sélectionner</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6+</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <p class="form-title">Vos coordonnées :</p>
+
+                    <div class="form-group">
+                        <label for="nom-prenom">Nom et Prénom :</label>
+                        <input type="text" id="nom-prenom" name="nom-prenom" placeholder="Maxime Pierre-Antoine" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="adresse-mail">Adresse mail :</label>
+                        <input type="email" id="adresse-mail" name="adresse-mail" placeholder="Myname@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone :</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="XX XX XX XX XX" required>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 25px;">
+                        <label for="allergies">Allergies, Intolérances & Demande :</label>
+                        <textarea id="allergies" name="allergies" placeholder="Allergies, autre ..." rows="5"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="colonne-droite">
+                
+                <div class="form-section menu-selection">
+                    <p class="form-title">Sélectionnez vos plats (OBLIGATOIRE)</p>
+
+                    <div class="menu-grid-content">
+                        
+                        <div class="menu-category">
+                            <h3>Plats Chauds</h3>
+                            <div class="menu-item">
+                                <label>Le Gourmand Urbain (14 €)</label>
+                                <p>Bœuf haché charolais, confit d'oignon au vinaigre balsamique, raclette fermière AOP, sauce moutarde à l'ancienne et miel, dans un bun's brioché artisanal.</p>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_gourmand">
+                            </div>
+                            <div class="menu-item">
+                                <label>Le Tacos par Priscille (12.50 €)</label>
+                                <p>Tortillas de maïs maison, émincé de poulet mariné au curry doux et lait de coco, pickles de mangue et coriandre fraîche. Servi avec une crème de cajou pimentée.</p>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_tacos">
+                            </div>
+                            <div class="menu-item">
+                                <label> Focaccia par Kadiatou (11.50 €)</label>
+                                <p>Tranche épaisse de Focaccia (huile d'olive locale), pesto maison à la roquette, jambon cru IGP, copeaux de parmesan affiné et tomates cerises confites.</p>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_focaccia">
+                            </div>
+                            <div class="menu-item">
+                                <label> Bowl par Melissa (13.00 €)</label>
+                                <p>Base de quinoa et riz complet, légumes rôtis au four (patate douce, courgette, poivron), falafels maison, houmous de betterave et sauce tahini citronnée.</p>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_bowl">
+                            </div>
+                        </div>
+
+                        <div class="menu-category">
+                            <h3>Desserts</h3>
+                            <div class="menu-item">
+                                <label>Panna Cotta Voyageuse (5 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_pannacotta">
+                            </div>
+                            <div class="menu-item">
+                                <label>Brownie Croustillant (4.5 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_brownie">
+                            </div>
+                            <div class="menu-item">
+                                <label>Gaufre de Liège éphémere (6 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_gaufre">
+                            </div>
+                            <div class="menu-item">
+                                <label>Verrine Tiramisu Spéculoos (5.50 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_tiramisu">
+                            </div>
+                            <div class="menu-item">
+                                <label> Crumble de Saison (5.50 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_crumble">
+                            </div>
+                        </div>
+
+                        <div class="menu-category" style="border-bottom: none;">
+                            <h3>Boissons</h3>
+                            <div class="menu-item">
+                                <label>Limonade Artisanale (4.00 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_limonade">
+                            </div>
+                            <div class="menu-item" style="border-bottom: none;">
+                                <label>Thé Glacé Maison (4.00 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_the">
+                            </div>
+                            <div class="menu-item">
+                                <label>Jus de Pomme-Gingembre (4.50 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_jus">
+                            </div>
+                            <div class="menu-item" style="border-bottom: none;">
+                                <label>Chocolat Chaud Gourmand (4.00 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_chocolatchaud">
+                            </div>
+                            <div class="menu-item">
+                                <label>Café de Spécialité (2.50 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_cafe">
+                            </div>
+                            <div class="menu-item" style="border-bottom: none;">
+                                <label>Boissons ( eau , coca , ice tea et autre ) (3.00 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_bbasique">
+                            </div>
+                        </div>
+
+                        <div class="menu-category" style="border-bottom: none;">
+                            <h3>Street Slide</h3>
+                            <p> Nos accompagnements sortant du classique mais simple</p>
+                            <div class="menu-item">
+                                <label>Frites de Patate Douce (4.50 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_frites">
+                            </div>
+                            <div class="menu-item" style="border-bottom: none;">
+                                <label>Salade de Choux Croquante (4.00 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_salade">
+                            </div>
+                            <div class="menu-item">
+                                <label>Sauce signature Street (1.00 €)</label>
+                                <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_sauce">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="total-display">
+                        Le prix total des plats/boissons sera calculé après l'envoi de la réservation et confirmé par email.
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="summary-text">*Un récapitulatif de votre réservation sera envoyé par email.</p>
+
+            <button type="submit" class="submit-button">
+                Réserver
+            </button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="footer-colonne contact">
+            <h3>Nous Contacter</h3>
+            <p>Street Gourmand</p>
+            <p>123 Rue de la Gourmandise</p>
+            <p>75000 Paris, France</p>
+            <p>Téléphone : <strong>01 23 45 67 89</strong></p>
+            <p>Email : contact@restaurant.fr</p>
+        </div>
+
+        <div class="footer-colonne navigation">
+            <h3>Navigation</h3>
+            <ul id="footer-nav">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="menu.html">Le Menu</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-colonne reseaux">
+            <div class="reseaux-sociaux">
+                <p>Suivez-nous :</p>
+                <img src="./logo sans texte.png" alt="Logo sans texte" aria-label="Logosanstexte">
+                <h2 id="logo-text"> Street Gourmand </h2>
+            </div>
+        </div>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; 2025 Street Gourmand. Tous droits réservés.
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
