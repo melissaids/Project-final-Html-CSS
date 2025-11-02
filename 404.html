@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur 404 - Page Introuvable</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header class="header-nav">
+        <input type="checkbox" id="menu-toggle">
+
+        <a href="index.html">
+            <div id="SGlogo" style="font-size: 2em; font-weight: bold; color: var(--color-primary);">SG</div> 
+        </a>
+
+        <label for="menu-toggle" class="menu-icon">
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+        </label>
+
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="menu.html">Menu</a>
+            <a href="apropos.html">À Propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <main id="error-404" class="reservation-form" style="text-align: center; padding-top: 60px; padding-bottom: 60px;">
+            
+            <h1 style="font-size: 8em; font-weight: 900; color: var(--color-button-bg); margin-bottom: 0px; line-height: 1;">
+                404
+            </h1>
+            
+            <h2 class="form-title" style="font-size: 2em; border-bottom: none; color: var(--color-primary); margin-top: 10px; margin-bottom: 30px;">
+                Page Non Trouvée 😔
+            </h2>
+            
+            <p class="reservation-subtitle" style="font-size: 1.2em; max-width: 600px; margin: 0 auto 40px auto; color: var(--color-placeholder);">
+                Désolé, il semble que ce plat (cette page) n'est pas encore au menu, ou l'URL est incorrecte.
+                <br>
+                Nos chefs sont peut-être encore en cuisine pour la préparer !
+            </p>
+
+            <div class="form-section" style="max-width: 550px; margin: 0 auto; border-color: var(--color-info-box);">
+                <h3 style="color: var(--color-info-box); margin-top: 0; font-size: 1.5em;">Que faire ?</h3>
+                
+                <a href="index.html" class="submit-button" style="width: 90%; margin: 20px auto 10px auto; background-color: var(--color-button-bg);">
+                    Retourner à la Page d'Accueil
+                </a>
+
+                <p style="margin-top: 20px; font-size: 1.1em;">
+                    Ou, consultez notre carte pour vous régaler : 
+                    <a href="menu.html" class="read-more" style="font-size: 1em; font-weight: bold; color: var(--color-primary);">Voir notre Menu Complet</a>
+                </p>
+            </div>
+            
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-copyright">
+            &copy; 2025 Street Gourmand. Tous droits réservés.
+        </div>
+    </footer>
+    </body>
+</html>
