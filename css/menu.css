@@ -22,6 +22,23 @@ body {
     background-color: var(--color-light);
 }
 
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffbb00;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
