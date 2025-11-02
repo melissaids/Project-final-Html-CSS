@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="test1.css">
 </head>
 <body>
-
-<div class="container">
-    <nav class="header-nav">
+<nav class="header-nav">
+    <input type="checkbox" id="menu-toggle"> 
+    <label for="menu-toggle" class="menu-icon">
+        <span class="nav-bar"></span>
+        <span class="nav-bar"></span>
+        <span class="nav-bar"></span>
+    </label>
+    
+    <img src="./img/logo sans texte.png" alt="Logo Street Gourmand" id="SGlogo">
+    
+    <div class="nav-links">
         <a href="#">Accueil</a>
         <a href="#">À propos de nous</a>
         <a href="#">Nos services</a>
-        <img src="./logo sans texte.png" alt="Logo Street Gourmand" id="SGlogo">
+        <a href="#">Le Menu</a>
         <a href="./reservation.html">Réservation</a>
         <a href="./contact.html">Nous contacter</a>
-        <a href="#">Blog</a>
-    </nav>
-
+        <a href="./blog.html">Blog</a>
+    </div>
+</nav>
+<div class="container">
+    
     <div class="reservation-form">
         <h1 class="reservation-title">RÉSERVATION</h1>
         <p class="reservation-subtitle">Merci de remplir ce formulaire pour toute réservation (de 1 personne ou plus).</p>
@@ -115,50 +125,61 @@
                             <h3>Desserts</h3>
                             <div class="menu-item">
                                 <label>Panna Cotta Voyageuse (5 €)</label>
+                                <p>Panna Cotta à la vanille infusée, coulis de fruits de la passion frais.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_pannacotta">
                             </div>
                             <div class="menu-item">
                                 <label>Brownie Croustillant (4.5 €)</label>
+                                <p>Carré de brownie au chocolat noir intense et noix de pécan.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_brownie">
                             </div>
                             <div class="menu-item">
                                 <label>Gaufre de Liège éphémere (6 €)</label>
+                                <p>Gaufre croustillante et moelleuse au sucre perlé, servie avec une crème fouettée à la fève Tonka.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_gaufre">
                             </div>
                             <div class="menu-item">
                                 <label>Verrine Tiramisu Spéculoos (5.50 €)</label>
+                                <p>Classique italien revisité avec du mascarpone de qualité, café serré et brisures de spéculoos pour une touche épicée.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_tiramisu">
                             </div>
                             <div class="menu-item">
                                 <label> Crumble de Saison (5.50 €)</label>
+                                <p>Fruits de saison rôtis (ex. Pommes/Poires en hiver), sous une couche de crumble aux flocons d'avoine et amandes, servi tiède.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_crumble">
                             </div>
                         </div>
 
-                        <div class="menu-category" style="border-bottom: none;">
+                        <div class="menu-category">
                             <h3>Boissons</h3>
                             <div class="menu-item">
                                 <label>Limonade Artisanale (4.00 €)</label>
+                                <p>Recette fraîche et naturelle (ex. citron vert & basilic).</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_limonade">
                             </div>
-                            <div class="menu-item" style="border-bottom: none;">
+                            <div class="menu-item">
                                 <label>Thé Glacé Maison (4.00 €)</label>
+                                <p>Infusion de menthe fraîche et citron, peu sucrée.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_the">
                             </div>
                             <div class="menu-item">
                                 <label>Jus de Pomme-Gingembre (4.50 €)</label>
+                                <p>Pur jus de pomme fermier et une touche de gingembre frais pressé pour le pep's.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_jus">
                             </div>
-                            <div class="menu-item" style="border-bottom: none;">
+                            <div class="menu-item">
                                 <label>Chocolat Chaud Gourmand (4.00 €)</label>
+                                <p> Véritable chocolat noir fondu au lait entier, garni d'une pointe de chantilly maison.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_chocolatchaud">
                             </div>
                             <div class="menu-item">
                                 <label>Café de Spécialité (2.50 €)</label>
+                                <p> Expresso serré ou allongé, grains torréfiés par un artisan local.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_cafe">
                             </div>
-                            <div class="menu-item" style="border-bottom: none;">
+                            <div class="menu-item">
                                 <label>Boissons ( eau , coca , ice tea et autre ) (3.00 €)</label>
+                                <p> Coca-cola, Ice Tea, Eau Minérale, fanta, oasis.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_bbasique">
                             </div>
                         </div>
@@ -168,14 +189,17 @@
                             <p> Nos accompagnements sortant du classique mais simple</p>
                             <div class="menu-item">
                                 <label>Frites de Patate Douce (4.50 €)</label>
+                                <p>Frites fraîches et croustillantes, saupoudrées de paprika fumé.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_frites">
                             </div>
-                            <div class="menu-item" style="border-bottom: none;">
+                            <div class="menu-item">
                                 <label>Salade de Choux Croquante (4.00 €)</label>
+                                <p>Choux blanc et carotte émincés, vinaigrette légère au sésame et gingembre.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_salade">
                             </div>
                             <div class="menu-item">
                                 <label>Sauce signature Street (1.00 €)</label>
+                                <p>Aïoli maison aux herbes du marché.</p>
                                 <input type="number" min="0" max="20" value="0" class="item-qty" name="qty_sauce">
                             </div>
                         </div>
@@ -212,19 +236,20 @@
         <div class="footer-colonne navigation">
             <h3>Navigation</h3>
             <ul id="footer-nav">
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="menu.html">Le Menu</a></li>
-                <li><a href="a-propos.html">À Propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">À propos de nous</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">Le Menu</a></li>
+                <li><a href="./reservation.html">Réservation</a></li>
+                <li><a href="./contact.html">Nous contacter</a></li>
+                <li><a href="./blog.html">Blog</a></li>
             </ul>
         </div>
 
         <div class="footer-colonne reseaux">
             <div class="reseaux-sociaux">
-                <p>Suivez-nous :</p>
-                <img src="./logo sans texte.png" alt="Logo sans texte" aria-label="Logosanstexte">
+                <img src="./img/logo sans texte.png" alt="Logo sans texte" aria-label="Logosanstexte">
                 <h2 id="logo-text"> Street Gourmand </h2>
+                <p> Crée par Melissa , Kadiatou et Priscille</p>
             </div>
         </div>
         </div>
