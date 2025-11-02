@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Gourmand - Accueil</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">Street Gourmand</div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="apropos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Bienvenue sur Street Gourmand !</h2>
+        <p>
+            Découvrez un univers de saveurs authentiques de la cuisine de rue.
+        </p>
+
+        <section class="page-breakdown">
+            <h3>Structure du Site et Responsabilités</h3>
+            
+            <div class="section-description">
+                <h4>Page d'Accueil (index.html)</h4>
+                <p><strong>Concepteur :</strong> [Votre Nom ou Nom de l'équipe]</p>
+                <p><strong>Description :</strong> Point d'entrée du site, elle présente l'identité *Street Gourmand* et sert de hub de navigation vers toutes les autres sections. (C'est la page actuelle.)</p>
+            </div>
+
+            <hr>
+
+            <div class="section-description">
+                <h4>Page Menu (menu.html)</h4>
+                <p><strong>Réalisé par :</strong> [Nom du Collaborateur/Équipe]</p>
+                <p><strong>Contenu :</strong> Liste détaillée des plats, avec photos et prix. La mise à jour des prix est gérée sur cette page.</p>
+            </div>
+
+            <hr>
+
+            <div class="section-description">
+                <h4>Page À Propos (apropos.html)</h4>
+                <p><strong>Réalisé par :</strong> [Nom du Collaborateur/Équipe]</p>
+                <p><strong>Contenu :</strong> Historique de l'entreprise, mission, vision, et présentation des chefs. Cette page donne un visage humain à notre marque.</p>
+            </div>
+
+            <hr>
+
+            <div class="section-description">
+                <h4>Page Contact (contact.html)</h4>
+                <p><strong>Réalisé par :</strong> [Nom du Collaborateur/Équipe]</p>
+                <p><strong>Contenu :</strong> Formulaire de contact, coordonnées (adresse, téléphone) et carte de localisation du Food Truck. Gère toutes les requêtes client.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
