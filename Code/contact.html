@@ -7,18 +7,27 @@
     <link rel="stylesheet" href="test1.css">
 </head>
 <body>
-    <div class="container">
     <nav class="header-nav">
+    <input type="checkbox" id="menu-toggle"> 
+    <label for="menu-toggle" class="menu-icon">
+        <span class="nav-bar"></span>
+        <span class="nav-bar"></span>
+        <span class="nav-bar"></span>
+    </label>
+    
+    <img src="./img/logo sans texte.png" alt="Logo Street Gourmand" id="SGlogo">
+    
+    <div class="nav-links">
         <a href="#">Accueil</a>
         <a href="#">À propos de nous</a>
         <a href="#">Nos services</a>
-        <img src="./logo sans texte.png" alt="Logo Street Gourmand" id="SGlogo">
+        <a href="#">Le Menu</a>
         <a href="./reservation.html">Réservation</a>
         <a href="./contact.html">Nous contacter</a>
-        <a href="#">Blog</a>
-    </nav>
-    
-
+        <a href="./blog.html">Blog</a>
+    </div>
+</nav>
+    <div class="container">
     <main class="container" id="contact-main">
         <h1 class="form-title">Contactez Street Gourmand</h1>
         <p style="text-align:center; max-width:800px; margin:0 auto 20px;">Vous avez une question, une suggestion ou souhaitez réserver pour un grand groupe ? Envoyez-nous un message et nous vous répondrons rapidement.</p>
@@ -70,19 +79,20 @@
         <div class="footer-colonne navigation">
             <h3>Navigation</h3>
             <ul id="footer-nav">
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="menu.html">Le Menu</a></li>
-                <li><a href="a-propos.html">À Propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">À propos de nous</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">Le Menu</a></li>
+                <li><a href="./reservation.html">Réservation</a></li>
+                <li><a href="./contact.html">Nous contacter</a></li>
+                <li><a href="./blog.html">Blog</a></li>
             </ul>
         </div>
 
         <div class="footer-colonne reseaux">
             <div class="reseaux-sociaux">
-                <p>Suivez-nous :</p>
-                <img src="./logo sans texte.png" alt="Logo sans texte" aria-label="Logosanstexte">
+                <img src="./img/logo sans texte.png" alt="Logo sans texte" aria-label="Logosanstexte">
                 <h2 id="logo-text"> Street Gourmand </h2>
+                <p> Crée par Melissa , Kadiatou et Priscille</p>
             </div>
         </div>
         </div>
