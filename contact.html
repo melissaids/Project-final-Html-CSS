@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Street Gourmand</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <nav class="header-nav">
+    <input type="checkbox" id="menu-toggle"> 
+    <label for="menu-toggle" class="menu-icon">
+        <span class="nav-bar"></span>
+        <span class="nav-bar"></span>
+        <span class="nav-bar"></span>
+    </label>
+    
+    <img src="./img/logo sans texte.png" alt="Logo Street Gourmand" id="SGlogo">
+    
+    <div class="nav-links">
+        <a href="#">Accueil</a>
+        <a href="#">À propos de nous</a>
+        <a href="#">Nos services</a>
+        <a href="#">Le Menu</a>
+        <a href="./reservation.html">Réservation</a>
+        <a href="./contact.html">Nous contacter</a>
+        <a href="./blog.html">Blog</a>
+    </div>
+</nav>
+    <div class="container">
+    <main class="container" id="contact-main">
+        <h1 class="form-title">Contactez Street Gourmand</h1>
+        <p style="text-align:center; max-width:800px; margin:0 auto 20px;">Vous avez une question, une suggestion ou souhaitez réserver pour un grand groupe ? Envoyez-nous un message et nous vous répondrons rapidement.</p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+            <div class="grid-2-col-wide">
+                <div>
+                    <label for="name">Nom complet <span aria-hidden="true">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                    <label for="email">Email <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="prenom@exemple.com" required>
+
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="01 23 45 67 89">
+                </div>
+
+                <div>
+                    <label for="subject">Sujet</label>
+                    <select id="subject" name="subject">
+                        <option value="general">Général</option>
+                        <option value="reservation">Réservation</option>
+                        <option value="group">Événement / Groupe</option>
+                        <option value="feedback">Retour / Suggestion</option>
+                    </select>
+
+                    <label for="message">Message <span aria-hidden="true">*</span></label>
+                    <textarea id="message" name="message" placeholder="Écrivez votre message ici" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" id="submit-btn">Envoyer le message</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+        <div class="footer-colonne contact">
+            <h3>Nous Contacter</h3>
+            <p>Street Gourmand</p>
+            <p>123 Rue de la Gourmandise</p>
+            <p>75000 Paris, France</p>
+            <p>Téléphone : <strong>01 23 45 67 89</strong></p>
+            <p>Email : contact@restaurant.fr</p>
+        </div>
+
+        <div class="footer-colonne navigation">
+            <h3>Navigation</h3>
+            <ul id="footer-nav">
+                <li><a href="#">À propos de nous</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">Le Menu</a></li>
+                <li><a href="./reservation.html">Réservation</a></li>
+                <li><a href="./contact.html">Nous contacter</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-colonne reseaux">
+            <div class="reseaux-sociaux">
+                <img src="./img/logo sans texte.png" alt="Logo sans texte" aria-label="Logosanstexte">
+                <h2 id="logo-text"> Street Gourmand </h2>
+                <p> Crée par Melissa , Kadiatou et Priscille</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; 2025 Street Gourmand. Tous droits réservés.
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
