@@ -7,59 +7,124 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    <header>
-        <div class="logo">Street Gourmand</div>
+    <header class="header-nav">
         
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="apropos.html">À Propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-            </ul>
+        <input type="checkbox" id="menu-toggle">
+
+        <a href="index.html">
+            <div id="SGlogo" style="font-size: 2em; font-weight: bold; color: var(--color-primary);">SG</div> 
+        </a>
+
+        <label for="menu-toggle" class="menu-icon">
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+            <span class="nav-bar"></span>
+        </label>
+
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="menu.html">Menu</a>
+            <a href="apropos.html">À Propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="blog.html">Blog</a>
         </nav>
     </header>
-
-    <div class="content">
-        <h2>Bienvenue sur Street Gourmand !</h2>
-        <p>
-            Découvrez un univers de saveurs authentiques de la cuisine de rue.
-        </p>
-
-        <section class="page-breakdown">
-            <h3>Structure du Site et Responsabilités</h3>
+    <div class="container">
+        
+        <main id="accueil-main" style="padding: 40px; flex-grow: 1;">
             
-            <div class="section-description">
-                <h4>Page d'Accueil (index.html)</h4>
-                <p><strong>Concepteur :</strong> [Votre Nom ou Nom de l'équipe]</p>
-                <p><strong>Description :</strong> Point d'entrée du site, elle présente l'identité *Street Gourmand* et sert de hub de navigation vers toutes les autres sections. (C'est la page actuelle.)</p>
-            </div>
+            <h1 class="reservation-title">Street Gourmand : L'Essence de la Street Food</h1>
+            <p class="reservation-subtitle">
+                Bienvenue ! Découvrez notre équipe et la structure qui donne vie à nos saveurs.
+            </p>
 
-            <hr>
+            <section class="section-description-grid">
+                
+                <h2 class="form-title">Répartition des Tâches et des Pages</h2>
+                
+                <div class="blog-grid"> 
+                    
+                    <div class="blog-post">
+                        <div class="post-content">
+                            <h3 class="post-title">Page d'Accueil (index.html)</h3>
+                            <p class="post-meta">Développeur Principal : <strong>[Votre Nom/Rôle]</strong></p>
+                            <p class="post-excerpt">
+                                C'est la vitrine du site ! Elle sert de **point de départ** à la navigation et présente l'identité *Street Gourmand*. Sa structure principale est le squelette de l'ensemble.
+                            </p>
+                        </div>
+                    </div>
 
-            <div class="section-description">
-                <h4>Page Menu (menu.html)</h4>
-                <p><strong>Réalisé par :</strong> [Nom du Collaborateur/Équipe]</p>
-                <p><strong>Contenu :</strong> Liste détaillée des plats, avec photos et prix. La mise à jour des prix est gérée sur cette page.</p>
-            </div>
+                    <div class="blog-post">
+                        <div class="post-content">
+                            <h3 class="post-title">Page Menu (menu.html)</h3>
+                            <p class="post-meta">Contenu et Mise en page : <strong>[Nom du Collaborateur/Équipe]</strong></p>
+                            <p class="post-excerpt">
+                                Cette section affiche tous nos produits avec les détails (ingrédients, prix). Elle utilise la grille de **catégories** (`.menu-category`) et d'**articles** (`.menu-item`).
+                            </p>
+                        </div>
+                    </div>
 
-            <hr>
+                    <div class="blog-post">
+                        <div class="post-content">
+                            <h3 class="post-title">Page À Propos (apropos.html)</h3>
+                            <p class="post-meta">Rédaction et Histoire : <strong>[Nom du Collaborateur/Équipe]</strong></p>
+                            <p class="post-excerpt">
+                                Elle raconte l'histoire de notre food truck, notre philosophie culinaire et présente l'équipe (par exemple, les chefs) avec des photos.
+                            </p>
+                        </div>
+                    </div>
 
-            <div class="section-description">
-                <h4>Page À Propos (apropos.html)</h4>
-                <p><strong>Réalisé par :</strong> [Nom du Collaborateur/Équipe]</p>
-                <p><strong>Contenu :</strong> Historique de l'entreprise, mission, vision, et présentation des chefs. Cette page donne un visage humain à notre marque.</p>
-            </div>
+                    <div class="blog-post">
+                        <div class="post-content">
+                            <h3 class="post-title">Page Contact (contact.html)</h3>
+                            <p class="post-meta">Formulaire et Intégration : <strong>[Nom du Collaborateur/Équipe]</strong></p>
+                            <p class="post-excerpt">
+                                Contient le formulaire de contact (utilisant les styles `.form-group`, `input`, etc.), nos coordonnées, et un plan de localisation.
+                            </p>
+                        </div>
+                    </div>
 
-            <hr>
-
-            <div class="section-description">
-                <h4>Page Contact (contact.html)</h4>
-                <p><strong>Réalisé par :</strong> [Nom du Collaborateur/Équipe]</p>
-                <p><strong>Contenu :</strong> Formulaire de contact, coordonnées (adresse, téléphone) et carte de localisation du Food Truck. Gère toutes les requêtes client.</p>
-            </div>
-        </section>
+                    <div class="blog-post">
+                        <div class="post-content">
+                            <h3 class="post-title">Page Galerie (galerie.html)</h3>
+                            <p class="post-meta">Sélection des Médias : <strong>[Nom du Collaborateur/Équipe]</strong></p>
+                            <p class="post-excerpt">
+                                Présentation visuelle de nos plats et de l'ambiance du camion. Utilise une grille similaire au blog pour afficher les images de manière attrayante.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
     </div>
-</body>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-colonne">
+                <h3>Street Gourmand</h3>
+                <img src="icone-logo.png" alt="Logo de Street Gourmand" class="reseaux-sociaux img" style="height: 60px;">
+                <p id="logo-text">La passion du goût dans la rue.</p>
+            </div>
+            <div class="footer-colonne">
+                <h3>Liens Rapides</h3>
+                <ul id="footer-nav">
+                    <li><a href="menu.html">Notre Menu</a></li>
+                    <li><a href="apropos.html">Notre Histoire</a></li>
+                    <li><a href="contact.html">Nous Contacter</a></li>
+                    <li><a href="blog.html">Blog Gourmand</a></li>
+                </ul>
+            </div>
+            <div class="footer-colonne">
+                <h3>Contact</h3>
+                <p>123 Rue de la Gourmandise, 75000 Paris</p>
+                <p>Téléphone : <a href="tel:0123456789">01 23 45 67 89</a></p>
+                <p>Email : <a href="mailto:contact@streetgourmand.fr">contact@streetgourmand.fr</a></p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2025 Street Gourmand. Tous droits réservés.
+        </div>
+    </footer>
+    </body>
 </html>
