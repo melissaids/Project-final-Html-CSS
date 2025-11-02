@@ -9,11 +9,7 @@
 <body>
     <header class="header-nav">
         <input type="checkbox" id="menu-toggle">
-
-        <a href="index.html">
-            <div id="SGlogo" style="font-size: 2em; font-weight: bold; color: var(--color-primary);">SG</div> 
-        </a>
-
+        <img src="/images/logo sans texte.png" alt="Logo Street Gourmand" id="SGlogo">
         <label for="menu-toggle" class="menu-icon">
             <span class="nav-bar"></span>
             <span class="nav-bar"></span>
@@ -34,9 +30,9 @@
         <main id="accueil-main" style="padding: 40px; flex-grow: 1;">
             
             <section class="reservation-form">
-                <h1 class="reservation-title">Street Gourmand : La Passion du Goût ! 🥨</h1>
+                <h1 class="reservation-title">Street Gourmand : La Passion du Goût & des cuisines ! </h1>
                 <p class="reservation-subtitle">
-                    Depuis 2018, nous vous apportons le meilleur de la cuisine de rue revisitée, directement à votre porte (ou presque !).
+                    Depuis 2025, nous vous apportons le meilleur de la cuisine de rue revisitée, directement à votre porte (ou presque !).
                 </p>
 
                 <div class="form-section" style="text-align: center; border-color: var(--color-info-box);">
@@ -51,7 +47,7 @@
             <hr>
 
             <section class="reservation-form">
-                <h2 class="form-title">L'Équipe Derrière les Fourneaux 🔥</h2>
+                <h2 class="form-title">L'Équipe Derrière les Fourneaux </h2>
                 <p class="reservation-subtitle">
                     Rencontrez les visages passionnés qui font de Street Gourmand une réalité savoureuse.
                 </p>
@@ -124,27 +120,37 @@
     </div>
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-colonne">
-                <h3>Street Gourmand</h3>
-                <img src="/images/logo sans fond.png" alt="Logo de Street Gourmand" class="reseaux-sociaux img" style="height: 60px;">
-                <p id="logo-text">La passion du goût dans la rue.</p>
-            </div>
-            <div class="footer-colonne">
-                <h3>Liens Rapides</h3>
-                <ul id="footer-nav">
-                    <li><a href="menu.html">Notre Menu</a></li>
-                    <li><a href="apropos.html">Notre Histoire</a></li>
-                    <li><a href="contact.html">Nous Contacter</a></li>
-                    <li><a href="blog.html">Blog Gourmand</a></li>
-                </ul>
-            </div>
-            <div class="footer-colonne">
-                <h3>Contact</h3>
-                <p>123 Rue de la Gourmandise, 75000 Paris</p>
-                <p>Téléphone : <a href="tel:0123456789">01 23 45 67 89</a></p>
-                <p>Email : <a href="mailto:contact@streetgourmand.fr">contact@streetgourmand.fr</a></p>
+        <div class="footer-colonne contact">
+            <h3>Nous Contacter</h3>
+            <p>Street Gourmand</p>
+            <p>123 Rue de la Gourmandise</p>
+            <p>75000 Paris, France</p>
+            <p>Téléphone : <strong>01 23 45 67 89</strong></p>
+            <p>Email : contact@restaurant.fr</p>
+        </div>
+
+        <div class="footer-colonne navigation">
+            <h3>Navigation</h3>
+            <ul id="footer-nav">
+            <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos de nous</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">Le Menu</a></li>
+                <li><a href="reservation.html">Réservation</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-colonne reseaux">
+            <div class="reseaux-sociaux">
+                <img src="/images/logo sans texte.png" alt="Logo sans texte" aria-label="Logosanstexte">
+                <h2 id="logo-text"> Street Gourmand </h2>
+                <p> Crée par Melissa , Kadiatou et Priscille</p>
             </div>
         </div>
+        </div>
+
         <div class="footer-copyright">
             &copy; 2025 Street Gourmand. Tous droits réservés.
         </div>
