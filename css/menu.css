@@ -28,7 +28,7 @@ body {
 }
 
 .nav-links a {
- color: white;
+ color: var(--color-dark);
  text-decoration: none;
  font-weight: bold;
  transition: color 0.3s;
