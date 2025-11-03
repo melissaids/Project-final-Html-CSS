@@ -78,8 +78,8 @@ Ce tableau résume la fonction de chaque fichier HTML créé pour le projet Stre
 | **`accueil2.html`** (Accueil) | Page d'accueil imaginer | Mission de l'equipe et présentation courte de l'équipe. Réaliser par Kaidatou B. |
 | **`menu.html`** | Carte des produits. | Liste détaillée des plats, boissons et desserts. Réaliser par Kadiatou B. |
 | **`blog.html`** | Une page de blog avec de articles de recettes pour qu ls gens puissent reproduire chez eux  | Liste des recettes et tendances (Tacos, Brownie, Frites). Réaliser par Melissa I. D. S. |
-| **`reservation.html`** | Une page de reservation qu les gens puissnet commander en avance avec plusieurs formulaire heure, date , precission sur la commande. Réaliser par Melissa I. D. S. |
-| **`contact.html`** | Page individuelle pour une recette ou un article. Réutilise les styles de formulaire pour la liste des ingrédients et les étapes. |
+| **`reservation.html`** | Une page de reservation qu les gens puissnet commander en avance avec plusieurs formulaire heure, date , precission sur la commande. | Réaliser par Melissa I. D. S. |
+| **`contact.html`** | Page individuelle pour une recette ou un article. Réutilise les styles de formulaire pour la liste des ingrédients et les étapes. | réaliser par Melissa I.D.S |
 | **`404.html`** | **Gestion d'erreur.** | Page affichée en cas de lien brisé. Réaliser par Melissa I. D. S. |
 | Dossier ./css/ | Localisation de différents feuille de style | Contient toutes les variables (`:root`), les styles responsifs et les classes de composants. |
 
